@@ -27,6 +27,49 @@ Aquí domina la eficiencia temporal y la asignación racional de recursos.
 
 ### 3. Simule el comportamiento de un robot con tres sensores de distancia, que recorre un espacio bidimensional, donde hay 4 objetos distribuidos aleatoriamente, que no se choca con esos objetos.
 
-En el documento robot_turtle.py se encuentra la simulación del robot con tres sensores de distancia, que recorre un espacio bidimensional, donde hay 4 objetos distribuidos aleatoriamente, que no se choca con esos objetos, adicionalmente se le ha añadido un pequeño porcentaje de aleatoriedad para que no se quede atascado en un ciclo, se uso la libreria turtle para la simulación del robot y los obstáculos, los obstaculos se ubican de forma aleatoria en el espacio bidimensional.
+
+En el archivo **P3_Robot.py** se presenta la simulación de un robot
+equipado con tres sensores de distancia que se desplaza en un espacio
+bidimensional donde existen cuatro obstáculos distribuidos
+aleatoriamente. El robot es capaz de recorrer el entorno evitando
+colisiones con dichos objetos.
+
+Para evitar que el robot quede atrapado en ciclos de movimiento
+repetitivos, se incorporó un pequeño componente de aleatoriedad en el
+proceso de decisión. La simulación visual del robot y de los obstáculos
+se realizó utilizando la librería **matplotlib**, mientras que la
+ubicación de los obstáculos se genera de forma aleatoria dentro del
+espacio bidimensional.
+
+El comportamiento del robot se modeló mediante un **autómata celular**,
+donde el movimiento emerge a partir de reglas locales de transición
+entre estados. En este modelo se consideran los siguientes estados:
+
+-   **x:** obstáculo\
+-   **m:** celda muerta (espacio libre sin robot)\
+-   **v:** celda viva (posición actual del robot)
+
+## Reglas del sistema
+
+-   La vecindad utilizada es completa (las 8 celdas que rodean cada
+    celda).
+-   Si una celda se encuentra en estado **v**, en la siguiente iteración
+    pasa al estado **m** (el robot se desplaza).
+-   Si una celda en estado **m** tiene al menos una celda **v** en su
+    vecindad, puede pasar al estado **v** en la siguiente iteración con
+    probabilidad 1/n, donde inicialmente n = 8 y este valor disminuye
+    progresivamente en evaluaciones posteriores.
+-   Si la aleatoriedad genera una nueva celda **v**, se deshabilita la
+    generación de otras celdas vivas en esa iteración, garantizando que
+    solo exista una posición del robot por paso temporal.
+-   Las celdas vecinas a un obstáculo (**x**) se consideran
+    inhabitables, por lo que no pueden cambiar al estado **v**.
+-   Si una celda está en estado **m** y no tiene celdas **v** en su
+    vecindad, permanece en estado **m** en la siguiente iteración.
+
+Estas reglas permiten simular de manera probabilística el desplazamiento
+de un robot con sensores de proximidad, donde el movimiento surge como
+resultado de la interacción local entre celdas y las restricciones
+impuestas por los obstáculos del entorno.
 
 ### 4. Tome el plano de una ciudad pequeña y localice, por ejemplo, las droguerías, centros de atención de salud y colegios. Por cada concepto dibuje un diagrama de Voronoi. ¿Considera que puede faltar una droguería, o un centro de atención de salud o un colegio? ¿Hay alguna relación entre los diagramas?
