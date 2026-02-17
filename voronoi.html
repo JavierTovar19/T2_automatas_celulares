@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c3e2d29a82de3f0f792149c87293e72d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c3e2d29a82de3f0f792149c87293e72d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c3e2d29a82de3f0f792149c87293e72d = L.map(
+                "map_c3e2d29a82de3f0f792149c87293e72d",
+                {
+                    center: [4.5709, -74.2973],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_722643c1b482c0638501f8fe7b4e7191 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_722643c1b482c0638501f8fe7b4e7191.addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+            var rectangle_86a73d4fb5e458bfc931080b07e1fece = L.rectangle(
+                [[4.611506, -74.124001], [4.626863, -74.107063]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+            var polygon_ae5024675e3e524419bbb5da42ae3dca = L.polygon(
+                [[4.6178153685689445, -74.11924738316911], [4.617789220704827, -74.11924805764188], [4.613636005973316, -74.12264851580079], [4.612876070544548, -74.124001], [4.621775530960208, -74.124001], [4.6178153685689445, -74.11924738316911]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_c5af67d5d3d2dcc821ac57624e42f46a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dea8358a6d9ed3b0a8d639e9d9b5603 = $(`<div id="html_9dea8358a6d9ed3b0a8d639e9d9b5603" style="width: 100.0%; height: 100.0%;">Área jose manuel</div>`)[0];
+                popup_c5af67d5d3d2dcc821ac57624e42f46a.setContent(html_9dea8358a6d9ed3b0a8d639e9d9b5603);
+            
+        
+
+        polygon_ae5024675e3e524419bbb5da42ae3dca.bindPopup(popup_c5af67d5d3d2dcc821ac57624e42f46a)
+        ;
+
+        
+    
+    
+            var polygon_aa0f88f6010b4f379fc7215cd86bd3a4 = L.polygon(
+                [[4.6128736104395545, -74.11723236932117], [4.613636005973316, -74.12264851580079], [4.617789220704827, -74.11924805764188], [4.61760907100823, -74.11905032747396], [4.6128736104395545, -74.11723236932117]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_943eba2c8835f24f4b361783ae1c1d7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d17642709ed8781ede24e050f0c86aa3 = $(`<div id="html_d17642709ed8781ede24e050f0c86aa3" style="width: 100.0%; height: 100.0%;">Área Galileo</div>`)[0];
+                popup_943eba2c8835f24f4b361783ae1c1d7f.setContent(html_d17642709ed8781ede24e050f0c86aa3);
+            
+        
+
+        polygon_aa0f88f6010b4f379fc7215cd86bd3a4.bindPopup(popup_943eba2c8835f24f4b361783ae1c1d7f)
+        ;
+
+        
+    
+    
+            var polygon_6da213e13d32cdf3f0cf269c99f0395a = L.polygon(
+                [[4.611506, -74.11309180882354], [4.611506, -74.11461832911391], [4.6128736104395545, -74.11723236932117], [4.61760907100823, -74.11905032747396], [4.6175703735464175, -74.1189778184421], [4.611506, -74.11309180882354]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_d15fd3ad816f607566d9b308ef2f9b74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e42b094de6f58ff204b37cee5302571 = $(`<div id="html_1e42b094de6f58ff204b37cee5302571" style="width: 100.0%; height: 100.0%;">Área Santisimo sacramento</div>`)[0];
+                popup_d15fd3ad816f607566d9b308ef2f9b74.setContent(html_1e42b094de6f58ff204b37cee5302571);
+            
+        
+
+        polygon_6da213e13d32cdf3f0cf269c99f0395a.bindPopup(popup_d15fd3ad816f607566d9b308ef2f9b74)
+        ;
+
+        
+    
+    
+            var polygon_9a6571b65290ddb3fe68616fa4f27323 = L.polygon(
+                [[4.6175703735464175, -74.1189778184421], [4.616302660300338, -74.11518566408733], [4.6153842927920765, -74.11447785921948], [4.611506, -74.11258259642506], [4.611506, -74.11309180882354], [4.6175703735464175, -74.1189778184421]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_7e83b4d18e3b401a5ed7b540b482ff4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4df11671de0efb206d1001997478b504 = $(`<div id="html_4df11671de0efb206d1001997478b504" style="width: 100.0%; height: 100.0%;">Área ITEC</div>`)[0];
+                popup_7e83b4d18e3b401a5ed7b540b482ff4f.setContent(html_4df11671de0efb206d1001997478b504);
+            
+        
+
+        polygon_9a6571b65290ddb3fe68616fa4f27323.bindPopup(popup_7e83b4d18e3b401a5ed7b540b482ff4f)
+        ;
+
+        
+    
+    
+            var polygon_02bc280cb11903c86fece944e74abdd9 = L.polygon(
+                [[4.6175703735464175, -74.1189778184421], [4.61760907100823, -74.11905032747396], [4.617789220704827, -74.11924805764188], [4.6178153685689445, -74.11924738316911], [4.619760037667059, -74.11741590967033], [4.620332639479818, -74.11630723490941], [4.619144823249469, -74.11515971616022], [4.616302660300338, -74.11518566408733], [4.6175703735464175, -74.1189778184421]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_c59f055300a8e6c642ece7003655ae2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e19e77987ec710c977f23e9bf16d4fb8 = $(`<div id="html_e19e77987ec710c977f23e9bf16d4fb8" style="width: 100.0%; height: 100.0%;">Área Gimnasio moderno</div>`)[0];
+                popup_c59f055300a8e6c642ece7003655ae2a.setContent(html_e19e77987ec710c977f23e9bf16d4fb8);
+            
+        
+
+        polygon_02bc280cb11903c86fece944e74abdd9.bindPopup(popup_c59f055300a8e6c642ece7003655ae2a)
+        ;
+
+        
+    
+    
+            var polygon_8ffe9b3acb221cd6aa34b116d0b6f0a6 = L.polygon(
+                [[4.619144823249469, -74.11515971616022], [4.618865771172693, -74.11435337960704], [4.617819968462111, -74.11382854158006], [4.6153842927920765, -74.11447785921948], [4.616302660300338, -74.11518566408733], [4.619144823249469, -74.11515971616022]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_ed22d024bb5bb91df0e6fbb4c0f7ae57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4a291618d0ed267aa40d7df63fe0e7f = $(`<div id="html_a4a291618d0ed267aa40d7df63fe0e7f" style="width: 100.0%; height: 100.0%;">Área Romel Velasco</div>`)[0];
+                popup_ed22d024bb5bb91df0e6fbb4c0f7ae57.setContent(html_a4a291618d0ed267aa40d7df63fe0e7f);
+            
+        
+
+        polygon_8ffe9b3acb221cd6aa34b116d0b6f0a6.bindPopup(popup_ed22d024bb5bb91df0e6fbb4c0f7ae57)
+        ;
+
+        
+    
+    
+            var polygon_4b839058cdbf48e6416182d390281594 = L.polygon(
+                [[4.6153842927920765, -74.11447785921948], [4.617819968462111, -74.11382854158006], [4.615594344692073, -74.107063], [4.611506, -74.107063], [4.611506, -74.11258259642506], [4.6153842927920765, -74.11447785921948]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_e9bd0c8fb20df348545d5429b295d1e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2cccabcfc8847e11db3a4a8ccfffc68 = $(`<div id="html_f2cccabcfc8847e11db3a4a8ccfffc68" style="width: 100.0%; height: 100.0%;">Área Liceo Diana Paola</div>`)[0];
+                popup_e9bd0c8fb20df348545d5429b295d1e4.setContent(html_f2cccabcfc8847e11db3a4a8ccfffc68);
+            
+        
+
+        polygon_4b839058cdbf48e6416182d390281594.bindPopup(popup_e9bd0c8fb20df348545d5429b295d1e4)
+        ;
+
+        
+    
+    
+            var polygon_7aa3d387b0d1ca05c67b465a88e69816 = L.polygon(
+                [[4.617819968462111, -74.11382854158006], [4.618865771172693, -74.11435337960704], [4.619831306702371, -74.107063], [4.615594344692073, -74.107063], [4.617819968462111, -74.11382854158006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_2b80fc60395dcb0e9268f582487426fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18df36ea89c3759f102d2c058365ddbe = $(`<div id="html_18df36ea89c3759f102d2c058365ddbe" style="width: 100.0%; height: 100.0%;">Área Psicopedagogico</div>`)[0];
+                popup_2b80fc60395dcb0e9268f582487426fe.setContent(html_18df36ea89c3759f102d2c058365ddbe);
+            
+        
+
+        polygon_7aa3d387b0d1ca05c67b465a88e69816.bindPopup(popup_2b80fc60395dcb0e9268f582487426fe)
+        ;
+
+        
+    
+    
+            var polygon_9d4960cf3a66467fe9c4ed3487be14cd = L.polygon(
+                [[4.620332639479818, -74.11630723490941], [4.621482005281532, -74.11577086420195], [4.621558949651963, -74.11565093478], [4.62133574500794, -74.107063], [4.619831306702371, -74.107063], [4.618865771172693, -74.11435337960704], [4.619144823249469, -74.11515971616022], [4.620332639479818, -74.11630723490941]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_37b8ecaa0d5949e7a843d3047dd49c64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61c3e3c419b4cdddcbf9fc1111e8f973 = $(`<div id="html_61c3e3c419b4cdddcbf9fc1111e8f973" style="width: 100.0%; height: 100.0%;">Área Sorrento B</div>`)[0];
+                popup_37b8ecaa0d5949e7a843d3047dd49c64.setContent(html_61c3e3c419b4cdddcbf9fc1111e8f973);
+            
+        
+
+        polygon_9d4960cf3a66467fe9c4ed3487be14cd.bindPopup(popup_37b8ecaa0d5949e7a843d3047dd49c64)
+        ;
+
+        
+    
+    
+            var polygon_a07aa620ea70c31416207bf8e3910ba5 = L.polygon(
+                [[4.619760037667059, -74.11741590967033], [4.6178153685689445, -74.11924738316911], [4.621775530960208, -74.124001], [4.626863, -74.124001], [4.626863, -74.12370262595127], [4.619760037667059, -74.11741590967033]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_e761ef669f63929f727ca6cbe90f03e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a8beab4c842766e4d264195c894473d = $(`<div id="html_8a8beab4c842766e4d264195c894473d" style="width: 100.0%; height: 100.0%;">Área Señora del Rosario</div>`)[0];
+                popup_e761ef669f63929f727ca6cbe90f03e9.setContent(html_8a8beab4c842766e4d264195c894473d);
+            
+        
+
+        polygon_a07aa620ea70c31416207bf8e3910ba5.bindPopup(popup_e761ef669f63929f727ca6cbe90f03e9)
+        ;
+
+        
+    
+    
+            var polygon_7da93e754f45420f4e95bc5c9e26fe20 = L.polygon(
+                [[4.613636005973316, -74.12264851580079], [4.6128736104395545, -74.11723236932117], [4.611506, -74.11461832911391], [4.611506, -74.124001], [4.612876070544548, -74.124001], [4.613636005973316, -74.12264851580079]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_4f743b1b8e87c18c175c4eeb8af2793a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36c18b172756ace7746f8837f751005f = $(`<div id="html_36c18b172756ace7746f8837f751005f" style="width: 100.0%; height: 100.0%;">Área Luis Carlos Sarmiento</div>`)[0];
+                popup_4f743b1b8e87c18c175c4eeb8af2793a.setContent(html_36c18b172756ace7746f8837f751005f);
+            
+        
+
+        polygon_7da93e754f45420f4e95bc5c9e26fe20.bindPopup(popup_4f743b1b8e87c18c175c4eeb8af2793a)
+        ;
+
+        
+    
+    
+            var polygon_9275486d9254f49b9004558dc6e682f7 = L.polygon(
+                [[4.626863, -74.12370262595127], [4.626863, -74.12067399074931], [4.621482005281532, -74.11577086420195], [4.620332639479818, -74.11630723490941], [4.619760037667059, -74.11741590967033], [4.626863, -74.12370262595127]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_f893ec9df6f89a423024c61569954392 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32e5d2351a6a8eb330ba6540e715fdd4 = $(`<div id="html_32e5d2351a6a8eb330ba6540e715fdd4" style="width: 100.0%; height: 100.0%;">Área Nuestra señora teresita</div>`)[0];
+                popup_f893ec9df6f89a423024c61569954392.setContent(html_32e5d2351a6a8eb330ba6540e715fdd4);
+            
+        
+
+        polygon_9275486d9254f49b9004558dc6e682f7.bindPopup(popup_f893ec9df6f89a423024c61569954392)
+        ;
+
+        
+    
+    
+            var polygon_bd13ceef85cbf369b88c41115930f088 = L.polygon(
+                [[4.621558949651963, -74.11565093478], [4.621482005281532, -74.11577086420195], [4.626863, -74.12067399074931], [4.626863, -74.11358027882562], [4.621558949651963, -74.11565093478]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_8dd17ed682f60929bc39f787987697c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9d3054314d8d9f059680af8d06cfbce = $(`<div id="html_d9d3054314d8d9f059680af8d06cfbce" style="width: 100.0%; height: 100.0%;">Área Nuestra señora de La Salette</div>`)[0];
+                popup_8dd17ed682f60929bc39f787987697c6.setContent(html_d9d3054314d8d9f059680af8d06cfbce);
+            
+        
+
+        polygon_bd13ceef85cbf369b88c41115930f088.bindPopup(popup_8dd17ed682f60929bc39f787987697c6)
+        ;
+
+        
+    
+    
+            var polygon_e1e9eb6468d3a0b945142f78134c796e = L.polygon(
+                [[4.621558949651963, -74.11565093478], [4.626863, -74.11358027882562], [4.626863, -74.107063], [4.62133574500794, -74.107063], [4.621558949651963, -74.11565093478]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_834b2a138d39cd3f7a66ac9fbff31777 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51ca2e76bc0ac562b029f60f3288165b = $(`<div id="html_51ca2e76bc0ac562b029f60f3288165b" style="width: 100.0%; height: 100.0%;">Área Sorrento A</div>`)[0];
+                popup_834b2a138d39cd3f7a66ac9fbff31777.setContent(html_51ca2e76bc0ac562b029f60f3288165b);
+            
+        
+
+        polygon_e1e9eb6468d3a0b945142f78134c796e.bindPopup(popup_834b2a138d39cd3f7a66ac9fbff31777)
+        ;
+
+        
+    
+    
+            var circle_marker_2bd17fd9e77c63a0580c797599d59998 = L.circleMarker(
+                [4.617701, -74.122509],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_cceb0040136ed4d9e8a0f25e723c81a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e9afeac68b7d8c1cf376ca038e64e63 = $(`<div id="html_7e9afeac68b7d8c1cf376ca038e64e63" style="width: 100.0%; height: 100.0%;">jose manuel</div>`)[0];
+                popup_cceb0040136ed4d9e8a0f25e723c81a8.setContent(html_7e9afeac68b7d8c1cf376ca038e64e63);
+            
+        
+
+        circle_marker_2bd17fd9e77c63a0580c797599d59998.bindPopup(popup_cceb0040136ed4d9e8a0f25e723c81a8)
+        ;
+
+        
+    
+    
+            var circle_marker_7393cd402acbaef2ae1c33f7cf6a46c5 = L.circleMarker(
+                [4.614575, -74.118691],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_bd96e35bf8f1714e65ca62770abfeb1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4fa915b9b903ef50fc0f6acd946a40c = $(`<div id="html_a4fa915b9b903ef50fc0f6acd946a40c" style="width: 100.0%; height: 100.0%;">Galileo</div>`)[0];
+                popup_bd96e35bf8f1714e65ca62770abfeb1d.setContent(html_a4fa915b9b903ef50fc0f6acd946a40c);
+            
+        
+
+        circle_marker_7393cd402acbaef2ae1c33f7cf6a46c5.bindPopup(popup_bd96e35bf8f1714e65ca62770abfeb1d)
+        ;
+
+        
+    
+    
+            var circle_marker_e427ce67c9cf30790e536d3a6b83b718 = L.circleMarker(
+                [4.615114, -74.117287],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_72d28ea5d33c9b9b7ee3143782067f77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89e13e5e9e3f443036bc449eb7ca3b77 = $(`<div id="html_89e13e5e9e3f443036bc449eb7ca3b77" style="width: 100.0%; height: 100.0%;">Santisimo sacramento</div>`)[0];
+                popup_72d28ea5d33c9b9b7ee3143782067f77.setContent(html_89e13e5e9e3f443036bc449eb7ca3b77);
+            
+        
+
+        circle_marker_e427ce67c9cf30790e536d3a6b83b718.bindPopup(popup_72d28ea5d33c9b9b7ee3143782067f77)
+        ;
+
+        
+    
+    
+            var circle_marker_7bbc71da69df654772d7ae788bd289b1 = L.circleMarker(
+                [4.615807, -74.116573],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_c377297d63c28a0b0683675590cd51f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ff83c922790982c2388f7b79b432eea = $(`<div id="html_2ff83c922790982c2388f7b79b432eea" style="width: 100.0%; height: 100.0%;">ITEC</div>`)[0];
+                popup_c377297d63c28a0b0683675590cd51f6.setContent(html_2ff83c922790982c2388f7b79b432eea);
+            
+        
+
+        circle_marker_7bbc71da69df654772d7ae788bd289b1.bindPopup(popup_c377297d63c28a0b0683675590cd51f6)
+        ;
+
+        
+    
+    
+            var circle_marker_3dab42be622ac4c4c388d930a3ede388 = L.circleMarker(
+                [4.617533, -74.115996],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_1426316fb58c35b41322c718569bca97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3a7b65f80b3772a527baa7a4bda5264 = $(`<div id="html_a3a7b65f80b3772a527baa7a4bda5264" style="width: 100.0%; height: 100.0%;">Gimnasio moderno</div>`)[0];
+                popup_1426316fb58c35b41322c718569bca97.setContent(html_a3a7b65f80b3772a527baa7a4bda5264);
+            
+        
+
+        circle_marker_3dab42be622ac4c4c388d930a3ede388.bindPopup(popup_1426316fb58c35b41322c718569bca97)
+        ;
+
+        
+    
+    
+            var circle_marker_a55f8e5dea431c4ecb37201799d4e124 = L.circleMarker(
+                [4.617518, -74.114353],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_ed3c1c238ae246ab874140d651fa5f3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bdbe2759d3a83a8e0195e711b2d0d64 = $(`<div id="html_8bdbe2759d3a83a8e0195e711b2d0d64" style="width: 100.0%; height: 100.0%;">Romel Velasco</div>`)[0];
+                popup_ed3c1c238ae246ab874140d651fa5f3f.setContent(html_8bdbe2759d3a83a8e0195e711b2d0d64);
+            
+        
+
+        circle_marker_a55f8e5dea431c4ecb37201799d4e124.bindPopup(popup_ed3c1c238ae246ab874140d651fa5f3f)
+        ;
+
+        
+    
+    
+            var circle_marker_7372725a0f4ce50e3619bfd803cec2a1 = L.circleMarker(
+                [4.617297, -74.113524],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_98873cdb924b5d9158b2be13db8f16f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_824ebf3ff493085091c8d121e9d1c8e4 = $(`<div id="html_824ebf3ff493085091c8d121e9d1c8e4" style="width: 100.0%; height: 100.0%;">Liceo Diana Paola</div>`)[0];
+                popup_98873cdb924b5d9158b2be13db8f16f2.setContent(html_824ebf3ff493085091c8d121e9d1c8e4);
+            
+        
+
+        circle_marker_7372725a0f4ce50e3619bfd803cec2a1.bindPopup(popup_98873cdb924b5d9158b2be13db8f16f2)
+        ;
+
+        
+    
+    
+            var circle_marker_fb11fabd35dd27cbf70c3f98388a8615 = L.circleMarker(
+                [4.61806, -74.113273],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_6c8a2364d082cb1c9d6b18b2d8c28e15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_033c5821a1de5927d1251ff7f186b868 = $(`<div id="html_033c5821a1de5927d1251ff7f186b868" style="width: 100.0%; height: 100.0%;">Psicopedagogico</div>`)[0];
+                popup_6c8a2364d082cb1c9d6b18b2d8c28e15.setContent(html_033c5821a1de5927d1251ff7f186b868);
+            
+        
+
+        circle_marker_fb11fabd35dd27cbf70c3f98388a8615.bindPopup(popup_6c8a2364d082cb1c9d6b18b2d8c28e15)
+        ;
+
+        
+    
+    
+            var circle_marker_497108b940e775e201e39f4583687b78 = L.circleMarker(
+                [4.619925, -74.11352],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_bd8d3501650111cb9ef1fb29a3152973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cde4cda7d836585ddec03d23f9d62be = $(`<div id="html_3cde4cda7d836585ddec03d23f9d62be" style="width: 100.0%; height: 100.0%;">Sorrento B</div>`)[0];
+                popup_bd8d3501650111cb9ef1fb29a3152973.setContent(html_3cde4cda7d836585ddec03d23f9d62be);
+            
+        
+
+        circle_marker_497108b940e775e201e39f4583687b78.bindPopup(popup_bd8d3501650111cb9ef1fb29a3152973)
+        ;
+
+        
+    
+    
+            var circle_marker_e538c732a32b25ae142f7f3e38b9a4a7 = L.circleMarker(
+                [4.621044, -74.119724],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_f26fc5353cfa24ff77c05b2ad74f7c8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7231e16c476e2d7ecbb75d7d145bf7b2 = $(`<div id="html_7231e16c476e2d7ecbb75d7d145bf7b2" style="width: 100.0%; height: 100.0%;">Señora del Rosario</div>`)[0];
+                popup_f26fc5353cfa24ff77c05b2ad74f7c8d.setContent(html_7231e16c476e2d7ecbb75d7d145bf7b2);
+            
+        
+
+        circle_marker_e538c732a32b25ae142f7f3e38b9a4a7.bindPopup(popup_f26fc5353cfa24ff77c05b2ad74f7c8d)
+        ;
+
+        
+    
+    
+            var circle_marker_08a3eaca869b2b450bff2494546e9279 = L.circleMarker(
+                [4.611641, -74.119104],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_1ab34ef279ab218960358ec9cfb40fb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_762cf7db6964ab5c749c9c6e9d656f21 = $(`<div id="html_762cf7db6964ab5c749c9c6e9d656f21" style="width: 100.0%; height: 100.0%;">Luis Carlos Sarmiento</div>`)[0];
+                popup_1ab34ef279ab218960358ec9cfb40fb7.setContent(html_762cf7db6964ab5c749c9c6e9d656f21);
+            
+        
+
+        circle_marker_08a3eaca869b2b450bff2494546e9279.bindPopup(popup_1ab34ef279ab218960358ec9cfb40fb7)
+        ;
+
+        
+    
+    
+            var circle_marker_3dff1c6ad1d69dbf0c2c915a5366b549 = L.circleMarker(
+                [4.622207, -74.11841],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_b56ad12ca256dce65535a4901b5f120e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c10a0e54a0d01d6b35a0dfa3231973b1 = $(`<div id="html_c10a0e54a0d01d6b35a0dfa3231973b1" style="width: 100.0%; height: 100.0%;">Nuestra señora teresita</div>`)[0];
+                popup_b56ad12ca256dce65535a4901b5f120e.setContent(html_c10a0e54a0d01d6b35a0dfa3231973b1);
+            
+        
+
+        circle_marker_3dff1c6ad1d69dbf0c2c915a5366b549.bindPopup(popup_b56ad12ca256dce65535a4901b5f120e)
+        ;
+
+        
+    
+    
+            var circle_marker_b702d5494d604733bcbaca4b1b185f38 = L.circleMarker(
+                [4.624177, -74.116248],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_9f22e134f603d46d422136840e7e1061 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10bcaaf401579473aceac920dff90b55 = $(`<div id="html_10bcaaf401579473aceac920dff90b55" style="width: 100.0%; height: 100.0%;">Nuestra señora de La Salette</div>`)[0];
+                popup_9f22e134f603d46d422136840e7e1061.setContent(html_10bcaaf401579473aceac920dff90b55);
+            
+        
+
+        circle_marker_b702d5494d604733bcbaca4b1b185f38.bindPopup(popup_9f22e134f603d46d422136840e7e1061)
+        ;
+
+        
+    
+    
+            var circle_marker_c68e919e9aff345feedd214677132301 = L.circleMarker(
+                [4.62308, -74.113438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c3e2d29a82de3f0f792149c87293e72d);
+        
+    
+        var popup_3f88eb78717655c2ebfe189cdecbea92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba3a0986f16c14131e1f53ab55012a5c = $(`<div id="html_ba3a0986f16c14131e1f53ab55012a5c" style="width: 100.0%; height: 100.0%;">Sorrento A</div>`)[0];
+                popup_3f88eb78717655c2ebfe189cdecbea92.setContent(html_ba3a0986f16c14131e1f53ab55012a5c);
+            
+        
+
+        circle_marker_c68e919e9aff345feedd214677132301.bindPopup(popup_3f88eb78717655c2ebfe189cdecbea92)
+        ;
+
+        
+    
+</script>
+</html>
