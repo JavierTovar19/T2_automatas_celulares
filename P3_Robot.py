@@ -11,9 +11,9 @@ ESTADO_INHABITABLE = 3  # Vecino de 'x' (zona prohibida)
 
 # Configuración del mapa
 PERIODO = 0.01
-N_FILAS = 30
-N_COLUMNAS = 30
-N_OBSTACULOS = 50  # Número de cajas aleatorias
+N_FILAS = 12
+N_COLUMNAS = 12
+N_OBSTACULOS = 4  # Número de cajas aleatorias
 
 def crear_mapa():
     """Inicializa la grilla con cajas, zonas prohibidas y una célula."""
