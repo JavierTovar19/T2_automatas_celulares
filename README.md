@@ -25,8 +25,9 @@ Aquí domina la eficiencia temporal y la asignación racional de recursos.
  
 ### 2. Suponga una enfermedad, o un incendio forestal, o una moda, desarrolle un modelo de difusión usando ACs probabilísticos. O simule un robot con dos ruedas que evite obstáculos.
 
-### 3. Simule el comportamiento de un robot con tres sensores de distancia, que recorre un espacio bidimensional, donde hay 4 objetos distribuidos aleatoriamente, que no se choca con esos objetos.
+En el archivo **P2_poblaciones.py** se presenta la simulación de un modelo de depredador-presa (Wa-Tor) implementado como un autómata celular. En este modelo, se simula la interacción entre dos especies, conejos y zorros, en un entorno bidimensional. El sistema incluye reglas para el movimiento, reproducción y muerte de ambas especies, así como la capacidad de simular obstáculos en el entorno.
 
+### 3. Simule el comportamiento de un robot con tres sensores de distancia, que recorre un espacio bidimensional, donde hay 4 objetos distribuidos aleatoriamente, que no se choca con esos objetos.
 
 En el archivo **P3_Robot.py** se presenta la simulación de un robot
 equipado con tres sensores de distancia que se desplaza en un espacio
