@@ -3,3 +3,4 @@ env/
 no_va/
 *.pyc
 __pycache__/
+*.py

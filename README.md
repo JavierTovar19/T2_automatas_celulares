@@ -48,7 +48,8 @@ entre estados. En este modelo se consideran los siguientes estados:
 
 -   **x:** obstáculo\
 -   **m:** celda muerta (espacio libre sin robot)\
--   **v:** celda viva (posición actual del robot)
+-   **v:** celda viva (posición actual del robot)\
+[Notebook desarrollado](./P2_poblaciones.ipynb)
 
 ## Reglas del sistema
 
@@ -73,4 +74,8 @@ de un robot con sensores de proximidad, donde el movimiento surge como
 resultado de la interacción local entre celdas y las restricciones
 impuestas por los obstáculos del entorno.
 
+[Notebook desarrollado](./P3_Robot.ipynb)
+
 ### 4. Tome el plano de una ciudad pequeña y localice, por ejemplo, las droguerías, centros de atención de salud y colegios. Por cada concepto dibuje un diagrama de Voronoi. ¿Considera que puede faltar una droguería, o un centro de atención de salud o un colegio? ¿Hay alguna relación entre los diagramas?
+
+[Notebook desarrollado](./P4_voronoi.ipynb)
